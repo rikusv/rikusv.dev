@@ -1,0 +1,25 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  text-align: center;
+  margin: 0;
+}
+
+a.icon {
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.phrase-container {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.phrase-container span {
+  margin: 1rem;
+}
