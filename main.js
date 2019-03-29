@@ -115,7 +115,7 @@ function write(array) {
   array.forEach(function(phrase) {
     var span = document.createElement('span')
     span.innerHTML = phrase.value
-    span.style.fontSize = Math.max(phrase.size - 5, 1) + 'rem'
+    span.style.fontSize = Math.max(phrase.size - 5, 1) + 'em'
     span.style.color = colors[random(0, colors.length - 1)]
     if (phrase.size < 5) {
       span.style.opacity = phrase.size * 2 / 10
