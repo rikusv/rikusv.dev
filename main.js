@@ -39,7 +39,7 @@ var phrases = [
     size: 8
   }, {
     value: 'SAP UI5',
-    size: 8
+    size: 7
   }, {
     value: 'React',
     size: 3
@@ -51,7 +51,7 @@ var phrases = [
     size: 4
   }, {
     value: 'Material Design',
-    size: 4
+    size: 3
   }, {
     value: 'HTML',
     size: 3
@@ -71,29 +71,41 @@ var phrases = [
     value: 'SAP Gateway OData',
     size: 3
   }, {
-    value: 'Firebase',
+    value: 'Cloud Firestore',
     size: 6
   }, {
-    value: 'Cloud Firestore',
-    size: 7
+    value: 'PostgreSQL',
+    size: 6
+  }, {
+    value: 'MongoDB',
+    size: 6
   }, {
     value: 'SAP Cloud Platform',
     size: 3
   }, {
     value: 'Google Cloud Platform',
-    size: 6
+    size: 7
   }, {
     value: 'Amazon Web Services',
-    size: 3
+    size: 7
   }, {
     value: 'Git',
     size: 5
   }, {
     value: 'Docker',
-    size: 3
+    size: 5
   }, {
     value: 'Kubernetes',
-    size: 3
+    size: 7
+  }, {
+    value: 'Scuba Diving',
+    size: 5
+  }, {
+    value: 'Music',
+    size: 5
+  }, {
+    value: 'Mathematics',
+    size: 7
   }
 ]
 
