@@ -1,5 +1,3 @@
-var document
-
 const data = {
   things: [
     {
@@ -22,51 +20,51 @@ const data = {
       value: 'Python',
       size: 8
     },
-  	{
+    {
       value: 'Angular',
       size: 4
     },
-  	{
+    {
       value: 'OpenUI5',
       size: 2
     },
-  	{
+    {
       value: 'React',
       size: 2
     },
-  	{
+    {
       value: 'Django',
       size: 2
     },
-  	{
+    {
       value: 'PostgreSQL',
       size: 2
     },
-  	{
+    {
       value: 'MongoDB',
       size: 4
     },
-  	{
+    {
       value: 'GCP',
       size: 4
     },
-  	{
+    {
       value: 'AWS',
       size: 8
     },
-  	{
+    {
       value: 'Scuba Diving',
       size: 1
     },
-  	{
+    {
       value: 'Music',
       size: 1
     },
-  	{
+    {
       value: 'Mathematics',
       size: 1
     },
-  	{
+    {
       value: 'Machine Learning',
       size: 1
     }
@@ -174,7 +172,7 @@ function show(dataName) {
   const minOpacity = 0.7
   shuffle(array)
   document.querySelector('.phrase-container').innerHTML = null
-  array.forEach(function(phrase) {
+  array.forEach((phrase) => {
     const span = document.createElement('span')
     span.innerHTML = phrase.value
     span.style.fontSize = Math.max(phrase.size / fontSizeDivisor, minFontSize) + 'em'
@@ -182,7 +180,7 @@ function show(dataName) {
     if (phrase.size < fontSizeDivisor * minFontSize) {
       span.style.opacity = Math.max(minOpacity, phrase.size / (fontSizeDivisor * minFontSize))
     }
-    if (phrase.hasOwnProperty('url')) {
+    if (phrase.url) {
       const link = document.createElement('a')
       link.href = phrase.url
       link.target = '_blank'
@@ -202,17 +200,16 @@ function onHashChange() {
   show(dataName)
 }
 
-window.addEventListener('hashchange', function(evt) {
+window.addEventListener('hashchange', () => {
   onHashChange()
-
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#thingsButton').addEventListener('click', function(evt) {
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('#thingsButton').addEventListener('click', (evt) => {
     evt.preventDefault()
     show('things')
   })
-  document.querySelector('#clientsButton').addEventListener('click', function(evt) {
+  document.querySelector('#clientsButton').addEventListener('click', (evt) => {
     evt.preventDefault()
     show('clients')
   })
