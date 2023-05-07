@@ -1,6 +1,18 @@
 const data = {
   things: [
     {
+      value: 'Industrial Engineering',
+      size: 8
+    },
+    {
+      value: 'Operations Research',
+      size: 8
+    },
+    {
+      value: 'Theory of Constraints',
+      size: 8
+    },
+    {
       value: 'GitOps',
       size: 6
     },
